@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UM007.SWFPreviewOnline", "UM007.SWFPreviewOnline\UM007.SWFPreviewOnline.csproj", "{66355940-83E2-4FEA-902A-1EF98A2A0470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UM007.SWFPreviewOnline.Common", "UM007.SWFPreviewOnline.Common\UM007.SWFPreviewOnline.Common.csproj", "{420B95B7-6035-4A3A-A528-63C29798D578}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66355940-83E2-4FEA-902A-1EF98A2A0470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66355940-83E2-4FEA-902A-1EF98A2A0470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66355940-83E2-4FEA-902A-1EF98A2A0470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66355940-83E2-4FEA-902A-1EF98A2A0470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420B95B7-6035-4A3A-A528-63C29798D578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420B95B7-6035-4A3A-A528-63C29798D578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420B95B7-6035-4A3A-A528-63C29798D578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420B95B7-6035-4A3A-A528-63C29798D578}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
