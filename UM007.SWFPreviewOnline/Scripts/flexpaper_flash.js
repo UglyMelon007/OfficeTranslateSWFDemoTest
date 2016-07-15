@@ -39,7 +39,6 @@ window.FlexPaperViewer = window.$f = function() {
 			InitViewMode : config.InitViewMode,
 			BitmapBasedRendering : config.BitmapBasedRendering,
 			StartAtPage : config.StartAtPage,
-			CanPrint: false,
 			
 			ViewModeToolsVisible : config.ViewModeToolsVisible,
 			ZoomToolsVisible : config.ZoomToolsVisible,

@@ -104,7 +104,6 @@
     <Content Include="bin\tools\viewers\technoargia.swf" />
     <Content Include="bin\tools\wav2swf.exe" />
     <Content Include="Default.aspx" />
-    <Content Include="FlexPaperViewer.swf" />
     <Content Include="Scripts\flexpaper_flash.js" />
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
