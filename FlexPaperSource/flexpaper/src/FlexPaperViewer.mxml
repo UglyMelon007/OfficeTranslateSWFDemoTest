@@ -102,7 +102,7 @@
 			private function initApp():void{ 
 				var params:Object = Application.application.parameters; 
 				_Scale = getNumber(params, "Scale", 1); 
-				_SwfFile = getString(params, "SwfFile", "Paper.swf"); 
+				_SwfFile = getString(params, "SwfFile", "E:\chao_code\ASPNet\UM007.SWFPreviewOnline\FlexPaperSource\flexpaper\src\中国石化无线网连接说明.swf"); 
 				_EncodeURI = getNumber(params, "EncodeURI", 1); 
 				_ZoomTransition = getString(params, "ZoomTransition", "easeOut"); 
 				_ZoomTime = getNumber(params, "ZoomTime", 0.6); 

@@ -699,11 +699,9 @@ package com.devaldi.controls.flexpaper
 		public function set SwfFile(s:String):void {
 			var pagesSplit:Boolean = false;
 			if(s==null){return;}
-			
 			if(EncodeURI)
 				//s = unescape(s);
 				s = decodeURI(s);
-			
 			if(s.length!=0){
 				
 				if(s.indexOf("{")>=0 && s.indexOf("}")>0){
@@ -732,15 +730,14 @@ package com.devaldi.controls.flexpaper
 				_jsonPageData = null;
 				
 				
-				if(!pagesSplit){
-					if(EncodeURI)
-						_swfFile = encodeURI(s);
-					else
-						_swfFile = s;
-				}
-				else
-					_swfFile = s;
-				
+				//if(!pagesSplit){
+					//if(EncodeURI)
+				//		_swfFile = encodeURI(s);
+					//else
+				//		_swfFile = s;
+				//}
+				//else
+				_swfFile = s;
 				ViewMode = Viewer.InitViewMode;
 				
 				try{
