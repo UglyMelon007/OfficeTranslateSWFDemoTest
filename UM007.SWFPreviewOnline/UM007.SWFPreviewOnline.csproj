@@ -104,10 +104,14 @@
     <Content Include="bin\tools\viewers\technoargia.swf" />
     <Content Include="bin\tools\wav2swf.exe" />
     <Content Include="Default.aspx" />
-    <Content Include="Scripts\flexpaper_flash.js" />
-    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
-    <Content Include="Scripts\jquery.js" />
+    <Content Include="Resource\SWF\FlexPaperViewer.swf" />
+    <Content Include="Resource\Img\uploadify-cancel.png" />
+    <Content Include="Resource\JS\flexpaper_flash.js" />
+    <Content Include="Resource\JS\jquery.js" />
+    <Content Include="Resource\JS\jquery.uploadify.min.js" />
+    <Content Include="Resource\JS\swfobject.js" />
+    <Content Include="Resource\CSS\uploadify.css" />
+    <Content Include="Resource\SWF\uploadify.swf" />
     <Content Include="TemplateHTML.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,20 +123,22 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FileTranslate.ashx.cs">
+    <Compile Include="Resource\ASHX\FileTranslate.ashx.cs">
       <DependentUpon>FileTranslate.ashx</DependentUpon>
     </Compile>
-    <Compile Include="OfficePDF.ashx.cs">
+    <Compile Include="Resource\ASHX\OfficePDF.ashx.cs">
       <DependentUpon>OfficePDF.ashx</DependentUpon>
     </Compile>
-    <Compile Include="PageInit.ashx.cs">
+    <Compile Include="Resource\ASHX\PageInit.ashx.cs">
       <DependentUpon>PageInit.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\ASHX\upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DOCFiles\" />
     <Folder Include="PDFFiles\" />
     <Folder Include="SWFFiles\" />
   </ItemGroup>
@@ -150,9 +156,13 @@
     <Content Include="bin\tools\viewers\technoargia.pyc" />
     <Content Include="bin\tools\viewers\__init__.py" />
     <Content Include="bin\tools\viewers\__init__.pyc" />
-    <Content Include="FileTranslate.ashx" />
-    <Content Include="PageInit.ashx" />
-    <Content Include="OfficePDF.ashx" />
+    <Content Include="Resource\ASHX\FileTranslate.ashx" />
+    <Content Include="Resource\ASHX\PageInit.ashx" />
+    <Content Include="Resource\ASHX\OfficePDF.ashx" />
+    <Content Include="Resource\ASHX\upload.ashx" />
+    <Content Include="OfficeFiles\三期可研20160513_01.doc" />
+    <Content Include="OfficeFiles\中国石化无线网连接说明.ppt" />
+    <Content Include="OfficeFiles\装置改造.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
