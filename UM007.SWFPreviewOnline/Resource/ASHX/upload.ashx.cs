@@ -22,18 +22,24 @@ namespace jqUploadify.scripts
         {
             context.Response.ContentType = "text/plain";
             context.Response.Charset = "utf-8";
-
-            HttpPostedFile file = context.Request.Files["Filedata"];
-            string uploadPath = context.Server.MapPath("../../PDFFiles//");
-
-            if (file != null)
+            try
             {
-                if (!Directory.Exists(uploadPath))
+                HttpPostedFile file = context.Request.Files["Filedata"];
+                string uploadPath = context.Server.MapPath("../../PDFFiles//");
+
+                if (file != null)
                 {
-                    Directory.CreateDirectory(uploadPath);
+                    if (!Directory.Exists(uploadPath))
+                    {
+                        Directory.CreateDirectory(uploadPath);
+                    }
+                    file.SaveAs(uploadPath + file.FileName);
+                    context.Response.Write(file.FileName + "\r\n" + uploadPath);
                 }
-                file.SaveAs(uploadPath + file.FileName);
-                context.Response.Write(file.FileName);
+            }
+            catch (Exception err)
+            {
+                context.Response.Write(err.Message);
             }
         }
 

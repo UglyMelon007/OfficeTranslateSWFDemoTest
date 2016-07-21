@@ -22,14 +22,14 @@ namespace UM007.SWFPreviewOnline
                 foreach (string filePath in filesPath)
                 {
                     string fileName = Path.GetFileNameWithoutExtension(filePath);
-                    PSD2swfHelper.PDF2SWF(string.Format("PDFFiles/{0}.pdf", fileName),
-                        string.Format("SWFFiles/{0}.swf", fileName.Trim().Replace(" ", "")));
+                    PSD2swfHelper.PDF2SWF(string.Format("../../PDFFiles/{0}.pdf", fileName),
+                        string.Format("../../SWFFiles/{0}.swf", fileName.Trim().Replace(" ", "")));
                 }
-                context.Response.Write("Hello World");
+                context.Response.Write("转换成功");
             }
             catch (Exception err)
             {
-                context.Response.Write(err.InnerException + "\r\n" + err.Message);
+                context.Response.Write("转换失败：" + err.InnerException + "\r\n" + err.Message);
             }
         }
 

@@ -5,8 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="Scripts/flexpaper_flash.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="Resource/JS/jquery.js"></script>
+    <script type="text/javascript" src="Resource/JS/flexpaper_flash.js"></script>
     <script>
         $(function() {
             $('#viewerPlaceHolder').css("width", window.innerWidth).css("height", window.innerHeight);
@@ -25,10 +25,10 @@
                 name = decodeURI(name);
             }
             var fp = new FlexPaperViewer(
-                'FlexPaperViewer',
+                'Resource/SWF/FlexPaperViewer',
                 'viewerPlaceHolder', {
                     config: {
-                        SwfFile: 'SWFFiles/' + name + '.swf',
+                        SwfFile: '../../SWFFiles/' + name + '.swf',
                         Scale: 0.6,
                         ZoomTransition: 'easeOut',
                         ZoomTime: 0.5,
