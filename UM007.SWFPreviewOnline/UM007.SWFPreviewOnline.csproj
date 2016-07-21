@@ -105,6 +105,8 @@
     <Content Include="bin\tools\viewers\technoargia.swf" />
     <Content Include="bin\tools\wav2swf.exe" />
     <Content Include="Default.aspx" />
+    <Content Include="Resource\JS\Default.js" />
+    <Content Include="Resource\JS\TemplateHTML.js" />
     <Content Include="Resource\SWF\FlexPaperViewer.swf" />
     <Content Include="Resource\Img\uploadify-cancel.png" />
     <Content Include="Resource\JS\flexpaper_flash.js" />
