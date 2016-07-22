@@ -25,6 +25,7 @@ namespace jqUploadify.scripts
             try
             {
                 HttpPostedFile file = context.Request.Files["Filedata"];
+                string parameter = context.Request["someKey"];
                 string uploadPath = context.Server.MapPath("../../PDFFiles//");
 
                 if (file != null)

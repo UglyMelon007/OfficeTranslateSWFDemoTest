@@ -75,6 +75,8 @@ function FilePreview(data) {
 }
 
 function doUplaod() {
+    //添加参数
+    $("#file_upload").uploadify("settings", "formData", { 'someKey': 'someValue', 'someOtherKey': 1 });
     $('#file_upload').uploadify('upload', '*');
 }
 

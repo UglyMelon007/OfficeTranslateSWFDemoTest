@@ -1,0 +1,8 @@
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\bin\UM007.SWFPreviewOnline.dll.config
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\bin\UM007.SWFPreviewOnline.dll
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\bin\UM007.SWFPreviewOnline.pdb
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\bin\UM007.SWFPreviewOnline.Common.dll
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\bin\UM007.SWFPreviewOnline.Common.pdb
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\obj\Debug\UM007.SWFPreviewOnline.csprojResolveAssemblyReference.cache
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\obj\Debug\UM007.SWFPreviewOnline.dll
+E:\chao_code\ASPNet\UM007.SWFPreviewOnline\UM007.SWFPreviewOnline\obj\Debug\UM007.SWFPreviewOnline.pdb
