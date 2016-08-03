@@ -48,8 +48,10 @@ namespace UM007.SWFPreviewOnline.Common
             StringBuilder sb = new StringBuilder();
             sb.Append(" \"" + pdfPath + "\"");
             sb.Append(" -o \"" + swfPath + "\"");
-            sb.Append(" -s flashversion=9");
-            sb.Append(" -s languagedir=C:\\xpf\\xpdf-chinese-simplified");
+            //中文乱码解决
+            sb.Append(" -s languagedir=D:\\xpdf\\xpdf-chinese-simplified");
+            //文件过于复杂解决
+            sb.Append(" -s poly2bitmap");
             if (endpage > GetPageCount(pdfPath)) endpage = GetPageCount(pdfPath);
             sb.Append(" -p " + "\"" + beginpage + "" + "-" + endpage + "\"");
             sb.Append(" -j " + photoQuality);
