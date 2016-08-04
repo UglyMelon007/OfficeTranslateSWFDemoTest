@@ -32,3 +32,6 @@ ERROR   This file is too complex to render- SWF only supports 65536 shapes at on
  pdf2swf 1.pdf -o 1.swf -f -T 9 -G -s bitmap    对everything 转成点阵    
 pdf2swf 1.pdf -o 1.swf -f -T 9 -G -s enablezlib  bitmap    对everything 转成点阵，并通过enablezlib压缩    
 处理这个问题可以按上面的方法，在转换时加入参数-s poly2bitmap 或者其他的来将文件中的图形转成点阵，这个是由于文件大太或者文件图形过多而引起的异常，所以建议在转换的过程时加入了文件的大小的判断，当文件过大时，就加入这个参数，不然就直接转，不加入这个参数时，转换的速度快一点
+
+##文件小于一页转换成的swf Flexpaper无法观看
+**在用pdf2swf转换文件时添加参数 -T 9
