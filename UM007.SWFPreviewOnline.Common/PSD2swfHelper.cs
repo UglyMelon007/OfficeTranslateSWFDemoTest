@@ -53,21 +53,29 @@ namespace UM007.SWFPreviewOnline.Common
             //文件过于复杂解决
             sb.Append(" -s poly2bitmap");
             if (endpage > GetPageCount(pdfPath)) endpage = GetPageCount(pdfPath);
-            sb.Append(" -p " + "\"" + beginpage + "" + "-" + endpage + "\"");
+            //若页数小于0则转换全部
+            if(endpage > 0) sb.Append(" -p " + "\"" + beginpage + "" + "-" + endpage + "\"");
             sb.Append(" -j " + photoQuality);
             string Command = sb.ToString();
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = exe;
-            p.StartInfo.Arguments = Command;
-            p.StartInfo.WorkingDirectory = HttpContext.Current.Server.MapPath("~/Bin/");
-            p.StartInfo.UseShellExecute = false;
-            p.StartInfo.RedirectStandardError = true;
-            p.StartInfo.CreateNoWindow = false;
-            p.Start();
-            p.BeginErrorReadLine();
-            p.WaitForExit();
-            p.Close();
-            p.Dispose();
+            try
+            {
+                System.Diagnostics.Process p = new System.Diagnostics.Process();
+                p.StartInfo.FileName = exe;
+                p.StartInfo.Arguments = Command;
+                p.StartInfo.WorkingDirectory = HttpContext.Current.Server.MapPath("~/Bin/");
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.RedirectStandardError = true;
+                p.StartInfo.CreateNoWindow = false;
+                p.Start();
+                p.BeginErrorReadLine();
+                p.WaitForExit();
+                p.Close();
+                p.Dispose();
+            }
+            catch (Exception err)
+            {
+
+            }
             return true;
         }
 
